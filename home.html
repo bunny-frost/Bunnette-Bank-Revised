@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="book.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bunnette Bank</title>
+</head>
+<body>
+    <div class="container">
+        <div class="new-word hidden">
+            <div class="popup">
+                <div class="popup-title">Add New Word <i class='bx bx-x close'></i></div>
+                <form id="add-word-form">
+                    <div class="word-cont">
+                        <div class="word">
+                            <label for="word" class="title">Word</label>
+                            <input type="text" class="word-box" name="new-word" id="word" placeholder="Enter new word" required>
+                        </div>
+                        <div class="meaning">
+                            <label for="meaning" class="title">Meaning</label>
+                            <input type="text" class="meaning-box" name="meaning" id="meaning" placeholder="Enter the meaning of the word" required>
+                        </div>
+                        <div class="example">
+                            <label for="example" class="title">Example</label>
+                            <input type="text" class="example-box" name="example" id="example" placeholder="Enter an example using this word">
+                        </div>
+                        <div class="novel">
+                            <label for="novel" class="title">Novel</label>
+                            <input type="text" class="novel-box" name="novel-name" id="novel" placeholder="Enter the novel name">
+                        </div>
+                        <div class="chapter">
+                            <label for="chapter" class="title">Chapter</label>
+                            <input type="number" class="chapter-box" name="chapter" id="chapter" placeholder="Enter the chapter number">
+                        </div>
+                    </div>
+                    <div class="act-btns">
+                        <button type="submit" class="add">Add</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="edit-word hidden">
+            <div class="popup">
+                <div class="popup-title">Editing Word <i class='bx bx-x close'></i></div>
+                <form id="edit-word-form">
+                    <div class="word-cont">
+                        <div class="word">
+                            <label for="word" class="title">Word</label>
+                            <input type="text" class="word-box" name="new-word" id="word" placeholder="Enter new word" required>
+                        </div>
+                        <div class="meaning">
+                            <label for="meaning" class="title">Meaning</label>
+                            <input type="text" class="meaning-box" name="meaning" id="meaning" placeholder="Enter the meaning of the word" required>
+                        </div>
+                        <div class="example">
+                            <label for="example" class="title">Example</label>
+                            <input type="text" class="example-box" name="example" id="example" placeholder="Enter an example using this word">
+                        </div>
+                        <div class="novel">
+                            <label for="novel" class="title">Novel</label>
+                            <input type="text" class="novel-box" name="novel-name" id="novel" placeholder="Enter the novel name">
+                        </div>
+                        <div class="chapter">
+                            <label for="chapter" class="title">Chapter</label>
+                            <input type="number" class="chapter-box" name="chapter" id="chapter" placeholder="Enter the chapter number">
+                        </div>
+                    </div>
+                    <div class="act-btns">
+                        <button type="submit" class="add">save</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="left-pane">
+            <div id="show">
+                All
+            </div>
+            <div class="letter a">
+                A
+            </div>
+            <div class="letter b">
+                B
+            </div>
+            <div class="letter c">
+                C
+            </div>
+            <div class="letter d">
+                D
+            </div>
+            <div class="letter e">
+                E
+            </div>
+            <div class="letter f">
+                F
+            </div>
+            <div class="letter g">
+                G
+            </div>
+            <div class="letter h">
+                H
+            </div>
+            <div class="letter i">
+                I
+            </div>
+            <div class="letter j">
+                J
+            </div>
+            <div class="letter k">
+                K
+            </div>
+            <div class="letter l">
+                L
+            </div>
+            <div class="letter m">
+                M
+            </div>
+            <div class="letter n">
+                N
+            </div>
+            <div class="letter o">
+                O
+            </div>
+            <div class="letter p">
+                P
+            </div>
+            <div class="letter q">
+                Q
+            </div>
+            <div class="letter r">
+                R
+            </div>
+            <div class="letter s">
+                S
+            </div>
+            <div class="letter t">
+                T
+            </div>
+            <div class="letter u">
+                U
+            </div>
+            <div class="letter v">
+                V
+            </div>
+            <div class="letter w">
+                W
+            </div>
+            <div class="letter x">
+                X
+            </div>
+            <div class="letter y">
+                Y
+            </div>
+            <div class="letter z">
+                Z
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="top-pane">
+                <input class="search" type="search" placeholder="Search for a word" id="search-box" aria-label="Search for a word">
+                <button class="add-word">Add a New Word</button>
+            </div>
+            <div class="bottom-pane">
+                <div class="words-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
